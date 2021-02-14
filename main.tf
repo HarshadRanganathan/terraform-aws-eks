@@ -10,7 +10,7 @@ module "label" {
 }
 
 module "eks_cluster" {
-  source                    = "git::https://github.com/cloudposse/terraform-aws-eks-cluster.git?ref=0.29.1"
+  source                     = "git::https://github.com/cloudposse/terraform-aws-eks-cluster.git?ref=0.29.1"
   namespace                  = var.namespace
   stage                      = var.stage
   name                       = var.name
