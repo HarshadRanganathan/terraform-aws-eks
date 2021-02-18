@@ -1,6 +1,6 @@
 
 module "label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=1.0.0"
+  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=0.19.2"
   namespace  = var.namespace
   name       = var.name
   stage      = var.stage
@@ -26,6 +26,6 @@ module "eks_cluster" {
   public_access_cidrs        = var.public_access_cidrs
   oidc_provider_enabled      = var.oidc_provider_enabled
   map_additional_iam_roles   = var.map_additional_iam_roles
-  workers_role_arns          = [module.eks_workers.workers_role_arn]
-  workers_security_group_ids = [module.eks_workers.security_group_id]
+  workers_role_arns          = []
+  workers_security_group_ids = []
 }
