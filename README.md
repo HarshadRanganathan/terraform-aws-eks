@@ -2,7 +2,7 @@
 
 Example code that uses [terraform-aws-eks-cluster](https://github.com/cloudposse/terraform-aws-eks-cluster) module to create EKS infrastructure in AWS.
 
-## Setup and teardown commands
+## Setup/Teardown Commands
 
 ```
 terraform init -backend-config="environments/prod/prod.backend.tfvars"
