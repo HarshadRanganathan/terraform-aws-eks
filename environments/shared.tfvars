@@ -32,6 +32,8 @@ disable_imds_v1 = true
 
 update_launch_template_default_version = true
 
+add_asg_cluster_autoscaler_discovery_tags = true 
+
 map_additional_iam_roles = []
 
 cluster_endpoint_private_access = true
