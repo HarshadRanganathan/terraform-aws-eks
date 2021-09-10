@@ -41,6 +41,12 @@ variable "tags" {
   description = "Additional tags (e.g. `map('BusinessUnit`,`XYZ`)"
 }
 
+variable "add_asg_cluster_autoscaler_discovery_tags" {
+  type        = bool
+  default     = false
+  description = "Whether to add auto discovery tags to ASG group needed for cluster autoscaler"
+}
+
 variable "update_launch_template_default_version" {
   type = bool
   description = "Whether to update Launch Template Default Version on each update."
